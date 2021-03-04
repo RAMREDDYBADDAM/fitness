@@ -1,0 +1,87 @@
+﻿body{
+	background-image:url('Capture.PNG');
+
+	background-position:top-right;
+	background-size:100%;
+	
+	background-repeat:no-repeat;
+}
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#0000FF;
+text-align:left;
+}
+li{
+	float:left;
+	font-size:20px;
+	background-image:url('IMG-20200330-WA0023.jpg');
+}
+li a{
+
+text-align:center;
+padding:10px 20px;
+	
+}
+h1{
+width:100%;
+color:black;
+font-family:"Courier New", Courier, monospace;
+text-align:center;
+text-shadow:1px 2px white;
+
+}
+p{
+font-size:200px;
+color:#000000;
+font-size:larger;
+text-align:left;
+font-family:"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+margin-top:100px;
+list-style-type:square;
+}
+table{
+	font-family:"Courier New", Courier, monospace;
+	border-collapse:collapse;
+	width:50%;
+	text-align:center;
+	margin-top:50px;
+	
+}
+th{
+	font-size:20px;
+	text-align:left;
+	padding:10px;
+	background-color:#9900FF;
+	
+}
+td{
+	background-color:blue;
+	font-size:20px;
+	text-align:left;
+	padding:10px 10px;
+}
+tr:nth-child(odd)
+{
+background-color:fuchsia;
+
+}
+tr:nth-child(even)
+{
+	
+	background-color:#FF3399;
+	
+}
+.container{
+	text-align:left;
+	padding-top:60px;
+}
+.footer{
+	position:fixed;
+	left:10px;
+	bottom:10px;
+	padding:1px 50px;
+	background-color:#CCFFCC;
+}

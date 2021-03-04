@@ -1,0 +1,273 @@
+﻿\documentclass[12pt]{report} 
+\usepackage{blindtext} 
+\usepackage{times} 
+\usepackage{graphicx} 
+\usepackage{geometry} 
+\usepackage{sectsty} 
+\usepackage{float} 
+\usepackage{array} 
+\usepackage[backend=biber,bibencoding=latin1]{biblatex} 
+\chapterfont{\centering} 
+\usepackage{enumitem} 
+\usepackage{enumerate} 
+\usepackage{listings} 
+\usepackage{color} 
+\usepackage{ragged2e} 
+\usepackage[headheight=0pt,headsep=0pt]{geometry} 
+\definecolor{dkgreen}{rgb}{0,0.6,0} 
+\definecolor{gray}{rgb}{0.5,0.5,0.5} 
+\definecolor{mauve}{rgb}{0.58,0,0.82} 
+ 
+  
+\lstset{ %   
+language=Java,                % the language of the code  
+ basicstyle=\footnotesize,           % the size of the fonts that are used for the code   numbers=left,                   % where to put the line-numbers   numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers   stepnumber=1,                   % each line is numbered 
+  numbersep=5pt,                  % how far the line-numbers are from the code 
+  backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}   
+showspaces=false,               % show spaces adding particular underscores   showstringspaces=false,         % underline spaces within strings   
+showtabs=false,                 % show tabs within strings adding particular underscores   frame=single,                   % adds a frame around the code 
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within notblack text (e.g. commens (green here)) 
+  tabsize=2,                      % sets default tabsize to 2 spaces   captionpos=b,                   % sets the caption-position to bottom   breaklines=true,                % sets automatic line breaking   breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace   title=\lstname,                   % show the filename of files included with \lstinputlisting; 
+                                  % also try caption instead of title   
+keywordstyle=\color{blue},          % keyword style   commentstyle=\color{dkgreen},       % comment style  
+ stringstyle=\color{mauve},         % string literal style  
+ escapeinside={\%*}{*)},            % if you want to add a comment within your code   morekeywords={*,...}               % if you want to add more keywords to the set 
+} 
+\geometry{a4paper,total={180mm,250mm},left=20mm,top=20mm, right=20mm} 
+\usepackage{indentfirst} 
+\thispagestyle{empty} 
+\begin{document} 
+\newpage 
+\begin{center} 
+\thispagestyle{empty} 
+\LARGE{\textsc {\textbf{SEMINAR TITLE}}}\\[0.2cm] 
+\vspace{0.2cm} 
+\Large{\textit{\\seminar report submitted \\in partial fulfillment of the requirement for award of the degree of}}\\[0.3cm] 
+ 
+\Large{\textbf{\\Bachelor of Technology\\in \\Computer Science \& Engineering}} 
+\vspace{0.5cm} 
+\Large{\textbf{\\By}}\\[0.5cm] 
+\begin{table}[h] 
+\centering 
+\Large{ 
+\begin{tabular}{>{\bfseries}lc>{\bfseries}r} 
+K.JASWANTH  & & (18UECS0330)\\T.H.S PRASHANTH                   & & (18UECS0842)\\B.RAM REDDY & & 
+(18UECS0106)\\ 
+\end{tabular}} 
+\end{table} 
+\vspace{0.5cm} 
+\large{\textit{Under the guidance of}}\\ 
+\large{\textit{Dr.M.SHYAMALA DEVI,M.Tech,Ph.d\\ 
+ASSOSIATE PROFESSOR 
+}}\\ 
+\vspace{0.5cm} 
+\includegraphics[scale=0.5]{Logo}\\ 
+\large{\textbf{DEPARTMENT OF COMPUTER SCIENCE \& ENGINEERING}}\\ 
+\large{\textbf{SCHOOL OF COMPUTING}}\\ 
+\vspace{.5cm}
+\Large{\textbf{VEL TECH RANGARAJAN Dr.SAGUNTHALA R\&D INSTITUTE OF SCIENCE AND TECHNOLOGY\\ (Deemed to be University Estd u/s 3 of UGC Act, 1956)\\Accredited by NAAC with A Grade}}\\ 
+\large{\textbf{CHENNAI 600 062, TAMILNADU, INDIA}} 
+\vspace{0.5cm}
+\large{\textbf{\\December, 2020}}\\ 
+\end{center} 
+ 
+%CERTIFICATE 
+\newpage 
+\pagenumbering{roman} 
+\begin{center} 
+{\Huge \textbf{ BONAFIDE CERTIFICATE}}\\[0.5cm] 
+\end{center} 
+\linespread{1.5} 
+\large{It is certified that the work contained in the seminar report titled "SEMINAR-TITLE (PREDICTION OF FISH WEIGHT BASED ON SPECIES FEATURES USING MACHINE LEARNING)" by "K.JASWANTH & & (18UECS0330), T.H.S PRASANTH & & (18UECS0842), B.RAM REDDY & & (18UECS0106)" has been carried out under my supervision and that this work has not been submitted elsewhere for a degree.} 
+\vspace{1.5cm} 
+\begin{flushright} 
+\textbf{Signature of Supervisor\\Supervisor name\\Designation\\Computer Science \& 
+Engineering\\School of Computing\\Vel Tech Rangarajan Dr.Sagunthala R\&D\\Institute of Science and Technology\\December, 2020}\\[2.0cm] 
+\textbf{Signature of Head of the Department\\Dr. V. Srinivasa Rao\\Professor \& Head\\Computer Science \& Engineering\\School of Computing\\Vel Tech Rangarajan Dr.Sagunthala R\&D\\Institute of Science and Technology\\December,2020}\\  
+\end{flushright} 
+ 
+%declaration 
+\newpage 
+\begin{center} 
+\Huge \textbf{DECLARATION} 
+\end{center} 
+\linespread{1.5} 
+\large{ 
+ We declare that this written submission represents our ideas in our own words and where others' ideas or words have been included, we have adequately cited and referenced the original sources. We also declare that we have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in our submission. We understand that any violation of the above will be cause for disciplinary action by the Institute and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.} 
+\vspace{2.0cm} 
+\begin{flushright} 
+(Signature)\\ 
+\large{B.RAM REDDY}\\ 
+\large{Date:\hspace*{1.0cm}/\hspace*{1.0cm}/}\\[2.0cm] 
+(Signature)\\ 
+\large{T.H.S PRASHANTH}\\ 
+\large{Date:\hspace*{1.0cm}/\hspace*{1.0cm}/}\\[2.0cm] 
+(Signature)\\ 
+\large{K.JASWANTH}\\ 
+\large{Date:\hspace*{1.0cm}/\hspace*{1.0cm}/}\\[2.0cm] 
+\end{flushright} 
+\newpage 
+ 
+%approval sheet 
+\newpage 
+\begin{center} 
+\Huge\textbf{APPROVAL SHEET}\\ 
+\vspace{1.0cm} 
+\end{center} 
+\linespread{1.5} 
+\justifying{ 
+\large{This seminar report entitled SEMINAR TITLE (IN CAPITAL LETTERS) by STUDENT NAME1 (REGISTER NO), STUDENT NAME2 (REGISTER NO), STUDENT NAME3 (REGISTER NO) is approved for the degree of B.Tech in Computer Science \& Engineering.}\\} 
+ 
+\vspace{1.0cm} 
+ 
+\begin{flushleft} 
+\textbf{Signature of Supervisor\\Dr.M.SHYAMALA DEVI\\ ASSOSIATE PROFESSOR\\Computer Science \& 
+Engineering\\School of Computing\\Vel Tech Rangarajan Dr.Sagunthala R\&D\\Institute of Science and Technology}\\[2.0cm] 
+\textbf{Signature of Seminar Handling Faculty\\DR.R.SRINIVASAN \\ASSOSIATE PROFFESOR\\Computer Science \& 
+Engineering\\School of Computing\\Vel Tech Rangarajan Dr.Sagunthala R\&D\\Institute of Science and Technology}\\  
+\end{flushleft} 
+
+
+\vspace{1.0cm} 
+\begin{flushleft} 
+\large{\textbf{Date:\hspace*{1.0cm}/\hspace*{2.0cm}/}}\\ 
+\large{\textbf{Place:}} 
+\end{flushleft} 
+ 
+%acknowledgment 
+\newpage 
+\begin{center} 
+\LARGE{\textbf{ACKNOWLEDGEMENT}}\\[0.5cm] 
+\end{center} 
+\linespread{1.13} 
+\large{\paragraph{}We express our deepest gratitude to our respected  \textbf{Founder Chancellor and President Col. Prof. Dr. R. RANGARAJAN B.E. (EEE), B.E. (MECH), M.S (AUTO). DSc., Foundress 
+President  Dr. R. SAGUNTHALA RANGARAJAN M.B.B.S.,} Chairperson Managing Trustee and Vice President.} 
+\large{\paragraph{}We are very much grateful to our beloved \textbf{Vice Chancellor  Prof. S. SALIVAHANAN, Ph.D.,} for providing us with an environment to complete our seminar successfully.} \large{\paragraph{}We obligated to our beloved \textbf{Registrar Prof. Dr. E. KANNAN, Ph.D.,} for providing immense support in all our endeavors.} 
+\large{\paragraph{}We thankful to our esteemed \textbf{Dean Academics Prof. Dr. A.T.RAVICHANDRAN, Ph.D.,} for providing a wonderful academic environment to complete our seminar successfully.} 
+\large{\paragraph{}We record indebtedness to our \textbf{Dean \& Head, Department of Computer Science \& Engineering Dr. V. SRINIVASA RAO, M.Tech., Ph.D.,} for immense care and encouragement towards us throughout the course of this seminar.} 
+\large{\paragraph{}A special thanks to our \textbf{Seminar Coordinator Dr.T.VEERAMAKALI Ph.D.,} for her valuable guidance and support throughout the course of the seminar.We thank to our \textbf{Seminar handling Faculty (Dr.R.SRINIVASAN,M.Tech,Ph.d))} for the valuable information shared in proceeding with our seminar.} 
+\large{\paragraph{}We take this opportunity to express our gratitude to Our Internal Supervisor \textbf{DR.M.SHAYAMALA DEVI,Ph.d,} for her cordial support, valuable information and guidance,she helped us in completing this seminar through various stages. We thank our department faculty, supporting staff and friends for their help and guidance to complete this seminar. } 
+\vspace{0.1cm} 
+\begin{flushright} 
+\begin{tabular}{>{\bfseries}lc>{\bfseries}r} 
+K.Jaswanth & & (18UECS0330)\\T.H.S Prashanth & & (18UECS0842)\\B.Ram Reddy & & 
+(18UECS0106)\\ 
+\end{tabular} 
+\end{flushright} 
+%ABSTRACT 
+\newpage 
+\begin{center} 
+\vspace{2cm} 
+\Huge{\textbf{ABSTRACT}}\\[0.5cm] 
+\end{center} 
+\begin{center} 
+\addtocontents{toc}{~\hfill\textbf{Page.No}\par} 
+\addcontentsline{toc}{chapter}{ABSTRACT} 
+\addtocontents{toc}{\protect\thispagestyle{empty}} 
+\end{center} 
+\Large{Species distribution is the result of complex interactions that involve environmental parameters as well as biotic factors. However, methodological approaches that consider the use of biotic variables during the prediction process are still largely lacking.  Most fishing forecasts use weather data coupled with assumptions about how likely a fish is to appear under given conditions. Fishing success is defined as the expected weight of the fish caught. Previous reports have mainly focused on commercial fishing or limited the research to examining the impact of a single variable. Machine Learning models are used to predict the weight of the fish. With this overview, this project provide following contribution. Firstly, the Fish weight feature dataset from UCI machine repository is subjected with the data processing and cleansing. Secondly, the raw data set is applied to find the regression relationship between all the features with fish weight is done with visualization. Thirdly, the raw dataset and the feature scaled dataset is applied to all the Linear Regression models and the performance is analyzed. Fourth, the raw dataset and the feature scaled dataset is applied to all the Ensembling Regression models and the performance is analyzed through intercept, MAE, MSE, R2Score, and EVS. The python code edited in spyder under Anaconda Navigator is used for implementation }\\ 
+ 
+\noindent \textbf{Keywords:UCI,MAE,MSE,R2SCORE&EVS}  
+\textbf{} 
+ 
+ 
+%list of figure 
+\newpage 
+ 
+\renewcommand*\listfigurename{LIST OF FIGURES} 
+\addcontentsline{toc}{chapter}{LIST OF FIGURES} 
+\listoffigures 
+\newpage 
+\renewcommand{\listtablename}{LIST OF TABLES} 
+\addcontentsline{toc}{chapter}{LIST OF TABLES} 
+\listoftables 
+ 
+%list of abbreviation 
+\newpage 
+\newlist{abbrv}{itemize}{1} 
+\setlist[abbrv,1]{label=,labelwidth=1in,align=parleft,itemsep=0.1\baselineskip,leftmargin=!} 
+  
+\chapter*{LIST OF ACRONYMS AND ABBREVIATIONS} 
+\chaptermark{LIST OF ACRONYMS AND ABBREVIATIONS} 
+\addcontentsline{toc}{chapter}{LIST OF ACRONYMS AND ABBREVIATIONS} 
+\begin{abbrv} 
+  
+\item[abbr] Abbreviation 
+\end{abbrv} 
+\newpage 
+\renewcommand*\contentsname{TABLE OF CONTENTS} 
+%\addtocontents{toc}{\textbf{CONTENT} \hfill \textbf{PAGE NO.}} 
+\tableofcontents 
+\addtocontents{toc}{\protect\pagestyle{empty}} 
+\thispagestyle{empty} 
+ 
+%introduction 
+\chapter{INTRODUCTION} 
+\pagenumbering{arabic} 
+\section{Introduction\\To predict the fish weight we are using machine learning technique.
+
+Supervised machine learning: The process of training algorithms that predict one attribute of a data point, the label, using the other attributes of the data point. The algorithm is trained using a data set, a relation, of pre-labelled data points.
+
+Attributes are commonly divided into multiple input attributes and one output attribute called the label. In this report, input attributes are denoted by X1, X2, ..., Xn and the output attribute, the label, is denoted by Y . Concrete instances of the attributes, data points, are denoted x1, ..., xn, y,length,breadth.
+
+By using the linear regression is a linear approach to modeling the relationship between a scalar response and one or more explanatory variables. The case of one explanatory variable is called simple linear regression} 
+\linespread{1.5} 
+\section{Aim of the Seminar\\By using machine learning we are going to to pridiction of fish based on its species features} 
+\section{Scope of the Seminar\\The fishing industry includes any industry or activity concerned with taking, culturing, processing, preserving, storing, transporting, marketing or selling fish or fish products.
+Most of the process in fishing industry need tradition techniques which require more time.
+We can’t minimize all the processes but some processes we can.
+With the help of old data we can predict the weight of the fish which reduces maximum effort of labour and equipment's required} 
+\section{Methodology\\The methodological framework here proposed provided higher predictive accuracy than conventional ANN models on the basis of the selection of correlated species as co-predictors. The most relevant co-predictor species were chosen on the basis of significant improvements in weight value.
+This methodology has a capability of finding the weight by taking the necessary inputs. 
+The length-weight relationship was established through the equation W = 0.0031×L3.6971 (R² = 0.9796). All linear regressions resulted highly significant, with the  coefficient of determination 
+} 
+ 
+%literature review 
+\chapter{LITERATURE REVIEW} 
+\linespread{1.5} 
+ 
+%SEMINAR DESCRIPTION 
+\chapter{SEMINAR DESCRIPTION} 
+\linespread{1.5} 
+\section{Existing System} 
+\subsubsection{Advantages} 
+\subsubsection{Disadvantages} 
+\section{Feasibility Study} 
+
+\chapter{ METHODOLOGIES } 
+\linespread{1.5} 
+\section{ METHODOLOGY 1} 
+  The methodological framework here proposed provided higher predictive accuracy than conventional ANN models on the basis of the selection of correlated species as co-predictors. The most relevant co-predictor species were chosen on the basis of significant improvements in weight value.
+This methodology has a capability of finding the weight by taking the necessary inputs. 
+The length-weight relationship was established through the equation W = 0.0031×L3.6971 (R² = 0.9796). All linear regressions resulted highly significant, with the  coefficient of determination 
+
+
+
+\chapter{RESULTS AND DISCUSSIONS} 
+\linespread{1.5} 
+This methodology has a capability of finding the weight by taking the necessary inputs
+
+\chapter{CONCLUSION AND FUTURE ENHANCEMENTS} 
+\linespread{1.5} 
+\section{Conclusion\\The methodological framework here proposed provided higher predictive accuracy than conventional ANN models on the basis of the selection of correlated species as co-predictors. The most relevant co-predictor species were chosen on the basis of significant improvements in weight value.\\The length-weight relationship was established through the equation W = 0.0031×L3.6971 (R² = 0.9796). All linear regressions resulted highly significant, with the  coefficient of determination 
+
+} 
+ 
+\section{Future Enhancements} 
+ 
+\addcontentsline{toc}{chapter}{References} 
+\renewcommand\bibname{Reference} 
+ 
+\begin{thebibliography}{9} 
+\bibitem{latexcompanion}  \text{Franceschini, S., Gandola, E., Martinoli, M. et al. Cascaded neural networks improving fish species prediction accuracy: the role of the biotic information. Sci Rep 8, 4581 (2018). 
+
+ Yang, X., Zhang, S., Liu, J., Gao, Q., Dong, S., & Zhou, C. (2020). Deep learning for smart fish farming: applications, opportunities and challenges. Reviews in Aquaculture. doi:10.1111/raq.12464 
+
+Furuya, Valéria & Michelato, Mariana & Cruz, Thais & Furuya, Wilson. (2014). Length-weight relationships and prediction equations of body composition of farm raised Astyanax aff. Fasciatus (Actinopterygii: Characiformes: Characidae). Zoologia (Curitiba). 31. Pp 521-524. 10.1590/S1984-46702014000600001.
+
+Palomares ML , Pauly D (1989) A multiple regression model for prediction the food consumption of Marine Fish populations. Marine and Freshwater Research 40, pp 259-273.
+}\\\\ \textbf{FORMAT:Author(s)name (Year).Title, Journal name, 
+Volume, Issue, Pageno.}\\ 
+\end{thebibliography} 
+\end{document}
+<img alt="" src=""><img alt="" src=""><img alt="" src="">
